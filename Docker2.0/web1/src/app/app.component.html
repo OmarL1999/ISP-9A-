@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Ejercicio Web 1</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Listas consulta editando </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Salir</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container my-4">
+  <div class="row">
+    <div class="col-lg-6">
+      <h2>Consultas registradas por usuarios</h2>
+      <img src="https://static.vecteezy.com/system/resources/previews/016/299/885/non_2x/data-query-icon-design-free-vector.jpg" alt="Descripción de la imagen" class="img-fluid my-3">
+    </div>
+    <div class="col-lg-6">
+
+      <div>
+        <table class="border border-dark">
+          <tr  class=" p-3 mb-2 bg-info  .text-dark  fs-3">
+            <th class="border border-dark">ID</th>
+            <th class="border border-dark">FirstName</th>
+            <th class="border border-dark">LastName</th>
+            <th class="border border-dark">Avatar</th>
+          </tr>
+          <tr class="text-black fs-2 bg-opacity-50" *ngFor="let item of data">
+            <td class="border border-dark">{{ item.id }}</td>
+            <td class="border border-dark">{{ item.first_name }}</td>
+            <td class="border border-dark">{{ item.last_name }}</td>
+            <img src={{item.avatar}} alt="" srcset="">
+          </tr>
+        </table>
+    
+        
+      </div>
+    </div>
+  </div>
+</div>

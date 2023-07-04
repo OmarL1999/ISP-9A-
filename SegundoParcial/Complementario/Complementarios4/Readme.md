@@ -8,4 +8,7 @@
 
 <img src="assets/screenshot/4.png" height="600em" />
 
+<img src="assets/screenshot/5.png" height="600em" />
+
+<img src="assets/screenshot/6.png" height="600em" />
 
